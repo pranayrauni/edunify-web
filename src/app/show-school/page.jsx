@@ -17,7 +17,7 @@ const ShowSchoolsPage = async () => {
     );
   }
   return (
-    <div className="p-4">
+    <div className="w-full flex justify-center flex-col items-center mx-auto py-4 max-w-6xl">
       <h1 className="text-2xl font-bold mb-4">School List</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {schools?.map((school) => (
@@ -25,7 +25,7 @@ const ShowSchoolsPage = async () => {
             <img
               src={school.image}
               alt={school.name}
-              className="w-full h-40 object-cover mb-2"
+              className="w-full h-52 object-cover mb-2"
             />
             <h2 className="text-xl font-bold">{school.name}</h2>
             <p>{school.address}</p>
