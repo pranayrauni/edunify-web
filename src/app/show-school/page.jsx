@@ -1,7 +1,6 @@
-import Image from "next/image";
 
 const fetchSchools = async () => {
-  const response = await fetch("http://localhost:3000/api/schools");
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/schools`);
   const data = await response.json();
   console.log(data);
   return data.schools;
