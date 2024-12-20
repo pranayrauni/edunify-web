@@ -7,6 +7,10 @@ const fetchSchools = async () => {
 };
 
 const ShowSchoolsPage = async () => {
+  if(!NEXT_PUBLIC_BASE_API_URL){
+    return null;
+  }
+  
   const schools = await fetchSchools();
   if (schools.length === 0) {
     return (
