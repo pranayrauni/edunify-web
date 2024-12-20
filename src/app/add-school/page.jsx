@@ -237,9 +237,9 @@ const AddSchoolPage = () => {
           <div className="flex w-full items-center justify-between">
             <Link
               href="/show-school"
-              className="my-2 rounded bg-blue-500 p-2 text-white"
+              className="my-2 rounded bg-green-500 p-2 text-white"
             >
-              View Schools
+              Show Schools
             </Link>
             <button
               type="submit"
